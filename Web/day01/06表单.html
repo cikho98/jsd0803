@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<h1>注册页面</h1>
+<!--action设置提交地址-->
+<form action="http://www.baidu.com">
+  <!--placeholder:站位文本
+  value ：设置默认值
+  maxlegth：最大字符长度
+  readonly：只读（只需写属性名即可）-->
+  用户名：<input type="text" name="username" placeholder="请输入用户名"
+             maxlength="5"><br>
+    <!--密码框得属性和文本框通用-->
+    密码：<input type="password" name="password" placeholder="请输入密码"><br>
+    <!--单选框 vaue属性必须写否则提交得是on-->
+    <!--checked设置默认选中-->
+    性别: <input type="radio" name="gender" checked value="m">男
+    <input type="radio" name="gender" value="w">女<br>
+    兴趣爱好：<input type="checkbox" name="hobby" checked value="smoking">运动
+    <input type="checkbox" name="hobby" value="game">游戏
+    <input type="checkbox" name="hooby" value="movie">看电影<br>
+    <!--日期选择器-->
+    生日：<input type="date" name="birthday"><br>
+    <!--文件选择器-->
+    <input type="file" name="pic"><br>
+    <!--下拉选-->
+    所在地：<select name="city">
+    <option value="bj">北京</option>
+    <option selected value="sh">上海</option>
+    <option value="gz">广州</option>br
+</select><br>
+  <input type="submit" value="注册">
+    <input type="reset">
+    <!--自定义按钮-->
+    <input type="button" value="自定义按钮">
+</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+  <style>
+    /*id选择器*/
+    #p1{color: red}
+    /*类悬着器*/
+    .c1{
+      color: blue;
+    }
+    /*分组选择器*/
+    h1,#p1 ,.c1{background-color: pink}
+    /*属性选择器*/
+    input[type='text']{background-color: red}
+    input[type='password']{background-color: pink}
+    /*任意元素选择器*/
+    *{border: 1px solid blue}
+  </style>
+</head>
+<body>
+<input type="text">
+<input type="password">
+<h1>刘苍松</h1>
+<p id="p1">冰箱</p>
+<p class="c1">洗衣机</p>
+<p>电视</p>
+<div class="c1">香蕉</div>
+<div>苹果</div>
+</body>
+</html>
